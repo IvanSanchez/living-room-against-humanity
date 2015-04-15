@@ -39,16 +39,25 @@ var count = 0;
 
 function drawNextQuestion(){
 	var text;
+	var numAnswers = 1;
+	
+	document.getElementById('pick2').style.display='none';
+	document.getElementById('pick3').style.display='none';
 	
 	if (count in questions) {
-		text = questions[count++].text;
+		text = questions[count].text;
+		numAnswers = questions[count].numAnswers;
+		count++;
 	} else {
 		text = "You have played the entire deck of questions, and you are horrible people. Take a break."
 	}
-		
+	
 	text = text.replace(/_/g, "_____________");
 	
-	document.body.innerHTML = text;
+	document.getElementById('question').innerHTML = text;
+	
+	if (numAnswers === 2) { document.getElementById('pick2').style.display='block'; }
+	if (numAnswers === 3) { document.getElementById('pick3').style.display='block'; }
 }
 
 document.addEventListener('keyup', drawNextQuestion);

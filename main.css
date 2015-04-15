@@ -9,11 +9,41 @@ html, body {
 	font-family: Nimbus Sans Bold;
 	
 	
-	font-size: 12.5vm;
-	font-size: 12.5vmin;
+	font-size: 11vm;
+	font-size: 11vmin;
 	
 	
-	padding: 2.5vm;
-	padding: 2.5vmin;
+	padding: 2vm;
+	padding: 2vmin;
 	
 }
+
+
+div#pick2, div#pick3 {
+	font-size: 7vm;
+	font-size: 7vmin;
+	position:fixed;
+	bottom:1em;
+	right:1em;
+	text-align: right;
+}
+
+div#pick3 div {
+	margin-top: 0.5em;
+}
+
+
+span.round-inverse {
+	background: white;
+	color: #232323;
+	border-radius: 100%;
+	display:inline-block;
+	text-align: center;
+	width:  10vm;
+	height: 10vm;
+	width:  10vmin;
+	height: 10vmin;
+}
+
+
+
