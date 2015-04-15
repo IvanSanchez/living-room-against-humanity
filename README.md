@@ -20,7 +20,7 @@ If that's the case, load up Living Room Against Humanity in a web browser, go fu
 
 # Caveats
 
-The deck of cards is shuffled at the beginning of the game, so cards are not repeated during a game. If you hit the bottom of the deck, just reload the webpage (F5) to play more.
+The deck of cards is shuffled at the beginning of the game, so cards are not repeated during a game. The game always ends with a haiku. If you'd like to shuffle all the questions and start over, just reload the webpage (F5).
 
 Right now, only the cards from the base game are used. If I'm bored enough, I'll code up a way to select questions from the expansion decks.
 

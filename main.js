@@ -49,21 +49,36 @@ function drawNextQuestion(){
 		numAnswers = questions[count].numAnswers;
 		count++;
 	} else {
-		text = "You have played the entire deck of questions, and you are horrible people. Take a break."
+		text = "Make a haiku."
+		numAnswers=3;
 	}
 	
 	text = text.replace(/_/g, "_____________");
+	text = text.replace(/  /g, "<br/>");
 	
 	document.getElementById('question').innerHTML = text;
 	
 	if (numAnswers === 2) { document.getElementById('pick2').style.display='block'; }
 	if (numAnswers === 3) { document.getElementById('pick3').style.display='block'; }
+	
+	
+	
+	if ('requestFullScreen' in document.body)
+		document.body.requestFullScreen();
+	
+	if ('mozRequestFullScreen' in document.body)
+		document.body.mozRequestFullScreen();
+	
+	if ('webkitRequestFullScreen' in document.body)
+		document.body.webkitRequestFullScreen();
 }
 
 document.addEventListener('keyup', drawNextQuestion);
 document.addEventListener('click', drawNextQuestion);
 
-// Load first question when the thing loads
-document.addEventListener("DOMContentLoaded", drawNextQuestion);
+
+document.addEventListener("DOMContentLoaded", function(){
+	document.getElementById('question').innerHTML = "Press any key or click anywhere to become a horrible person.";
+});
 
 

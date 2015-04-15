@@ -26,6 +26,7 @@ div#pick2, div#pick3 {
 	bottom:1em;
 	right:1em;
 	text-align: right;
+	display:none;
 }
 
 div#pick3 div {
