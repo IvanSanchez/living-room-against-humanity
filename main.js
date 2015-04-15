@@ -52,6 +52,7 @@ function drawNextQuestion(){
 }
 
 document.addEventListener('keyup', drawNextQuestion);
+document.addEventListener('click', drawNextQuestion);
 
 // Load first question when the thing loads
 document.addEventListener("DOMContentLoaded", drawNextQuestion);
