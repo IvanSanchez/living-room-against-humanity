@@ -1,0 +1,3 @@
+[submodule "hangouts-against-humanity"]
+	path = hangouts-against-humanity
+	url = https://github.com/samurailink3/hangouts-against-humanity.git

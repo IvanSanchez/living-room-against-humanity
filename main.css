@@ -1,0 +1,19 @@
+
+
+html, body {
+
+	margin:0;
+	color: #FFF;
+	background-color: #232323;
+
+	font-family: Nimbus Sans Bold;
+	
+	
+	font-size: 12.5vm;
+	font-size: 12.5vmin;
+	
+	
+	padding: 2.5vm;
+	padding: 2.5vmin;
+	
+}

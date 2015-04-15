@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: 'Nimbus Sans Bold';
+    src: url('n019004l-webfont.eot');
+    src: url('n019004l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('n019004l-webfont.woff2') format('woff2'),
+         url('n019004l-webfont.woff') format('woff'),
+         url('n019004l-webfont.ttf') format('truetype'),
+         url('n019004l-webfont.svg#nimbus_sans_lbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
